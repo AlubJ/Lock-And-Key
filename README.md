@@ -6,7 +6,9 @@ With help from [JujuAdams](https://github.com/JujuAdams)
 
 ## Functions:
 `file_save_encrypted(string, file)`
-Returns: N/A
+Returns: 
+  Successful: Outputted file
+  Un-successful: -1
 
 `file_open_encrypted(file)`
 Returns: String
