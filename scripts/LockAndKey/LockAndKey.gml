@@ -22,6 +22,7 @@ function file_save_encrypted(_string, _file) {
 		show_debug_message(_exception.script);
 		show_debug_message(_exception.stacktrace);
 		show_debug_message("String too small!");
+		return -1;
 	}
 	
 	// Save the buffer
@@ -30,6 +31,9 @@ function file_save_encrypted(_string, _file) {
 	// Memory management
 	buffer_delete(_buffer_0);
 	buffer_delete(_buffer_1);
+	
+	// Return back the file path
+	return _file;
 }
 
 // Load file with encryption - With help from Juju Adams
